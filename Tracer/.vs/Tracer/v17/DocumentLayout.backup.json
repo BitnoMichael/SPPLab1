@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|d:\\projects\\\u0441\u043F\u043F\\lab1\\tracer\\tracer.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|solutionrelative:tracer.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D21CDD86-F563-4159-A8A5-983FDC2F116E}|Tracer.Serialization\\Tracer.Serialization.csproj|d:\\projects\\\u0441\u043F\u043F\\lab1\\tracer\\tracer.serialization\\traceresultserializerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21CDD86-F563-4159-A8A5-983FDC2F116E}|Tracer.Serialization\\Tracer.Serialization.csproj|solutionrelative:tracer.serialization\\traceresultserializerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|d:\\projects\\\u0441\u043F\u043F\\lab1\\tracer\\tracer.example\\tracer.example.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|solutionrelative:tracer.example\\tracer.example.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|d:\\projects\\\u0441\u043F\u043F\\lab1\\tracer\\tracer.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C8F83BD-7EFF-4B40-A810-F9F173F14C51}|Tracer.Example\\Tracer.Example.csproj|solutionrelative:tracer.example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21CDD86-F563-4159-A8A5-983FDC2F116E}|Tracer.Serialization\\Tracer.Serialization.csproj|d:\\projects\\\u0441\u043F\u043F\\lab1\\tracer\\tracer.serialization\\traceresultserializerloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -72,7 +72,7 @@
         },
         {
           "DockedWidth": 438,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -80,12 +80,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Tracer.Example",
               "DocumentMoniker": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Example\\Tracer.Example.csproj",
               "RelativeDocumentMoniker": "Tracer.Example\\Tracer.Example.csproj",
-              "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Example\\Tracer.Example.csproj*",
-              "RelativeToolTip": "Tracer.Example\\Tracer.Example.csproj*",
+              "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Example\\Tracer.Example.csproj",
+              "RelativeToolTip": "Tracer.Example\\Tracer.Example.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-02-21T14:21:54.033Z",
@@ -93,13 +93,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TraceResultSerializerFactory.cs",
               "DocumentMoniker": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Serialization\\TraceResultSerializerFactory.cs",
               "RelativeDocumentMoniker": "Tracer.Serialization\\TraceResultSerializerFactory.cs",
               "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Serialization\\TraceResultSerializerFactory.cs",
               "RelativeToolTip": "Tracer.Serialization\\TraceResultSerializerFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvx4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T09:31:58.653Z",
               "EditorCaption": ""
@@ -223,13 +223,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Example\\Program.cs",
               "RelativeDocumentMoniker": "Tracer.Example\\Program.cs",
               "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Example\\Program.cs",
               "RelativeToolTip": "Tracer.Example\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAADwv10AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowGwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T14:11:00.683Z",
               "EditorCaption": ""
