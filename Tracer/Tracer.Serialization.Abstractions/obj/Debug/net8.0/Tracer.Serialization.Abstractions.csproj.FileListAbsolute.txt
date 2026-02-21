@@ -1,0 +1,15 @@
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\bin\Debug\net8.0\Tracer.Serialization.Abstractions.deps.json
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\bin\Debug\net8.0\Tracer.Serialization.Abstractions.dll
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\bin\Debug\net8.0\Tracer.Serialization.Abstractions.pdb
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\bin\Debug\net8.0\Tracer.Core.dll
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\bin\Debug\net8.0\Tracer.Core.pdb
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.csproj.AssemblyReference.cache
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.AssemblyInfoInputs.cache
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.AssemblyInfo.cs
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.csproj.CoreCompileInputs.cache
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.S.6897B637.Up2Date
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.dll
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\refint\Tracer.Serialization.Abstractions.dll
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\Tracer.Serialization.Abstractions.pdb
+D:\Projects\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\obj\Debug\net8.0\ref\Tracer.Serialization.Abstractions.dll

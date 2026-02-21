@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "5aAZYTafgAE=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\СПП\\Lab1\\Tracer\\Tracer.Example\\Tracer.Example.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mihail\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.io.pipelines\\10.0.2\\system.io.pipelines.10.0.2.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.text.encodings.web\\10.0.2\\system.text.encodings.web.10.0.2.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.text.json\\10.0.2\\system.text.json.10.0.2.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

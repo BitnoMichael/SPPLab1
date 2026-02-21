@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\СПП\Lab1\Tracer\Tracer.Serialization.Abstractions\Tracer.Serialization.Abstractions.csproj" />
+    <ProjectReference Include="..\Tracer.Serialization.Xml.Models\Tracer.Serialization.Xml.Models.csproj" />
+  </ItemGroup>
+
+</Project>

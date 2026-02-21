@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fkUy4tqJqIg=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\СПП\\Lab1\\Tracer\\Tracer.Serialization\\Tracer.Serialization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.io.pipelines\\10.0.2\\system.io.pipelines.10.0.2.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.text.encodings.web\\10.0.2\\system.text.encodings.web.10.0.2.nupkg.sha512",
+    "C:\\Users\\Mihail\\.nuget\\packages\\system.text.json\\10.0.2\\system.text.json.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
