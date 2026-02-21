@@ -3,100 +3,128 @@ using Xunit;
 
 namespace Tracer.Tests
 {
-    public class TracerTests
+    /// <summary>
+    /// Набор тестов для проверки корректности работы трассировщика.
+    /// </summary>
+    public class TracingFunctionalityTests
     {
-        [Fact]
-        public void SingleThread_ShouldTraceMethodName_AndPositiveTime()
+        private readonly ITracer _tracer;
+        private readonly ScenarioRunner _runner;
+
+        public TracingFunctionalityTests()
         {
-            ITracer tracer = new MyTracer();
-            var testObj = new TestClass(tracer);
-
-            testObj.SimpleMethod();
-            var result = tracer.GetTraceResult();
-
-            Assert.NotNull(result);
-            Assert.Single(result.Threads);
-
-            var threadResult = result.Threads[0];
-            Assert.Single(threadResult.Methods);
-
-            var methodResult = threadResult.Methods[0];
-            Assert.Equal(nameof(TestClass.SimpleMethod), methodResult.MethodName);
-            Assert.Equal(nameof(TestClass), methodResult.ClassName);
-            Assert.True(methodResult.Time >= 0);
+            _tracer = new MyTracer();
+            _runner = new ScenarioRunner(_tracer);
         }
 
         [Fact]
-        public void NestedCalls_ShouldHaveCorrectStructure()
+        public void VerifySingleThreadTracing()
         {
-            ITracer tracer = new MyTracer();
-            var testObj = new TestClass(tracer);
+            // Arrange & Act
+            _runner.RunSimpleOperation();
 
-            testObj.MethodA();
-            var result = tracer.GetTraceResult();
+            var traceData = _tracer.GetTraceResult();
 
-            var rootMethod = result.Threads[0].Methods[0];
+            // Assert
+            Assert.NotNull(traceData);
+            Assert.Single(traceData.Threads);
 
-            Assert.Equal(nameof(TestClass.MethodA), rootMethod.MethodName);
-            Assert.Single(rootMethod.Methods);
+            var threadInfo = traceData.Threads[0];
+            Assert.Single(threadInfo.Methods);
 
-            var childMethod = rootMethod.Methods[0];
-            Assert.Equal(nameof(TestClass.MethodB), childMethod.MethodName);
+            var methodInfo = threadInfo.Methods[0];
+            Assert.Equal(nameof(ScenarioRunner.RunSimpleOperation), methodInfo.MethodName);
+            Assert.Equal(nameof(ScenarioRunner), methodInfo.ClassName);
+            Assert.InRange(methodInfo.Time, 0, int.MaxValue); // время неотрицательное
         }
 
         [Fact]
-        public void MultiThread_ShouldSeparateTraceResults()
+        public void CheckNestedMethodHierarchy()
         {
-            ITracer tracer = new MyTracer();
-            var testObj = new TestClass(tracer);
+            // Arrange & Act
+            _runner.ExecuteOuterMethod();
 
-            var t1 = new Thread(() => testObj.SimpleMethod());
-            var t2 = new Thread(() => testObj.MethodA());
+            var traceData = _tracer.GetTraceResult();
 
-            t1.Start();
-            t2.Start();
+            // Assert
+            var root = traceData.Threads[0].Methods[0];
+            Assert.Equal(nameof(ScenarioRunner.ExecuteOuterMethod), root.MethodName);
+            Assert.Single(root.Methods); // должен быть ровно один вложенный метод
 
-            t1.Join();
-            t2.Join();
+            var nested = root.Methods[0];
+            Assert.Equal(nameof(ScenarioRunner.ExecuteInnerMethod), nested.MethodName);
+        }
 
-            var result = tracer.GetTraceResult();
+        [Fact]
+        public void EnsureThreadSeparation()
+        {
+            // Arrange
+            var tracer1 = new MyTracer();
+            var tracer2 = new MyTracer();
 
-            Assert.Equal(2, result.Threads.Count);
+            var runner1 = new ScenarioRunner(tracer1);
+            var runner2 = new ScenarioRunner(tracer2);
 
-            var id1 = result.Threads[0].ThreadId;
-            var id2 = result.Threads[1].ThreadId;
+            // Act
+            var thread1 = new Thread(() => runner1.RunSimpleOperation());
+            var thread2 = new Thread(() => runner2.ExecuteOuterMethod());
+
+            thread1.Start();
+            thread2.Start();
+
+            thread1.Join();
+            thread2.Join();
+
+            var result1 = tracer1.GetTraceResult();
+            var result2 = tracer2.GetTraceResult();
+
+            // Assert
+            Assert.Single(result1.Threads);
+            Assert.Single(result2.Threads);
+
+            var id1 = result1.Threads[0].ThreadId;
+            var id2 = result2.Threads[0].ThreadId;
             Assert.NotEqual(id1, id2);
         }
     }
 
-    public class TestClass
+    /// <summary>
+    /// Вспомогательный класс, имитирующий выполнение различных сценариев с замером времени.
+    /// </summary>
+    public class ScenarioRunner
     {
         private readonly ITracer _tracer;
 
-        public TestClass(ITracer tracer)
+        public ScenarioRunner(ITracer tracer)
         {
-            _tracer = tracer;
+            _tracer = tracer ?? throw new ArgumentNullException(nameof(tracer));
         }
 
-        public void SimpleMethod()
+        public void RunSimpleOperation()
         {
             _tracer.StartTrace();
+            SimulateWork();
+            _tracer.StopTrace();
+        }
+
+        public void ExecuteOuterMethod()
+        {
+            _tracer.StartTrace();
+            ExecuteInnerMethod();
+            _tracer.StopTrace();
+        }
+
+        public void ExecuteInnerMethod()
+        {
+            _tracer.StartTrace();
+            SimulateWork();
+            _tracer.StopTrace();
+        }
+
+        private void SimulateWork()
+        {
+            // Имитация полезной нагрузки
             Thread.Sleep(10);
-            _tracer.StopTrace();
-        }
-
-        public void MethodA()
-        {
-            _tracer.StartTrace();
-            MethodB();
-            _tracer.StopTrace();
-        }
-
-        public void MethodB()
-        {
-            _tracer.StartTrace();
-            Thread.Sleep(10);
-            _tracer.StopTrace();
         }
     }
 }

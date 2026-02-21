@@ -76,8 +76,12 @@
         },
         {
           "DockedWidth": 438,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -86,7 +90,7 @@
               "RelativeDocumentMoniker": "Tracer.Core.Tests\\Test1.cs",
               "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Core.Tests\\Test1.cs",
               "RelativeToolTip": "Tracer.Core.Tests\\Test1.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDIAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwFAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T16:05:04.601Z",
               "EditorCaption": ""
@@ -94,19 +98,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Tracer.Core.Tests",
+              "Title": "Tracer.Core.Tests.csproj",
               "DocumentMoniker": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Core.Tests\\Tracer.Core.Tests.csproj",
               "RelativeDocumentMoniker": "Tracer.Core.Tests\\Tracer.Core.Tests.csproj",
               "ToolTip": "D:\\Projects\\\u0421\u041F\u041F\\Lab1\\Tracer\\Tracer.Core.Tests\\Tracer.Core.Tests.csproj",
               "RelativeToolTip": "Tracer.Core.Tests\\Tracer.Core.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-21T15:46:09.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2026-02-21T15:46:09.882Z"
             },
             {
               "$type": "Document",
@@ -118,8 +117,7 @@
               "RelativeToolTip": "Tracer.Example\\Tracer.Example.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-21T14:21:54.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T14:21:54.033Z"
             },
             {
               "$type": "Document",
@@ -131,8 +129,7 @@
               "RelativeToolTip": "Tracer.Serialization\\TraceResultSerializerFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvx4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:31:58.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:31:58.653Z"
             },
             {
               "$type": "Document",
@@ -144,8 +141,7 @@
               "RelativeToolTip": "Tracer.Serialization\\TraceResultSerializerLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:30:55.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:30:55.182Z"
             },
             {
               "$type": "Document",
@@ -157,8 +153,7 @@
               "RelativeToolTip": "Tracer.Serialization.Abstractions\\ITraceResultSerializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:28:23.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:28:23.411Z"
             },
             {
               "$type": "Document",
@@ -170,8 +165,7 @@
               "RelativeToolTip": "Tracer.Core\\Tracer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:25:24.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:25:24.886Z"
             },
             {
               "$type": "Document",
@@ -183,8 +177,7 @@
               "RelativeToolTip": "Tracer.Core\\ThreadTraceData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:24:31.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:24:31.543Z"
             },
             {
               "$type": "Document",
@@ -196,8 +189,7 @@
               "RelativeToolTip": "Tracer.Core\\InternalMethodTrace.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:23:23.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:23:23.799Z"
             },
             {
               "$type": "Document",
@@ -209,8 +201,7 @@
               "RelativeToolTip": "Tracer.Core\\MethodTraceResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:21:26.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:21:26.208Z"
             },
             {
               "$type": "Document",
@@ -222,8 +213,7 @@
               "RelativeToolTip": "Tracer.Core\\ThreadTraceResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:21:02.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:21:02.892Z"
             },
             {
               "$type": "Document",
@@ -235,8 +225,7 @@
               "RelativeToolTip": "Tracer.Core\\TraceResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:20:23.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:20:23.653Z"
             },
             {
               "$type": "Document",
@@ -248,8 +237,7 @@
               "RelativeToolTip": "Tracer.Core\\ITracer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:19:01.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T09:19:01.876Z"
             },
             {
               "$type": "Document",
@@ -261,8 +249,7 @@
               "RelativeToolTip": "Tracer.Example\\Program.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAowG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T14:11:00.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T14:11:00.683Z"
             }
           ]
         },
