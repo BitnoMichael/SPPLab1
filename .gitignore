@@ -1,0 +1,100 @@
+## Игнорирование файлов и папок для .NET проектов в Visual Studio
+
+# Файлы пользовательских настроек Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Результаты сборки
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+*.dll
+*.exe
+*.pdb
+*.msi
+*.msp
+
+# Файлы, создаваемые инструментами
+*.cache
+*.log
+*.tmp
+*.temp
+*.tmp_proj
+
+# Файлы NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Публикация
+Publish/
+*.pubxml
+*.publishproj
+
+# Файлы, специфичные для пользователя
+*.user
+*.userprefs
+
+# Настройки редактора
+.vscode/
+.idea/
+
+# Файлы базы данных SQLite
+*.db
+*.db-wal
+*.db-shm
+
+# Файлы покрытия кода
+*.coverage
+*.coverage.json
+
+# Настройки тестов
+*.TestResults
+
+# Файлы, создаваемые Rider IDE
+.idea/
+*.sln.iml
+
+# Файлы конфигурации, содержащие секреты
+appsettings.Development.json
+secrets.json
+
+# Файлы SSL
+*.pfx
+*.crt
+
+# Файлы, специфичные для разработки
+*.pidb
+*.svclog
+*.scc
+
+# Логи и базы данных Entity Framework
+/Migrations/*.log
+/Migrations/*.db
+
+# Visual Studio Code
+.vscode/
+
+# Результаты тестирования
+TestResults/
+*.trx
+
+# Временные файлы
+*~
+*.bak
+*.swp
+*.tmp
+*.temp
+
+# Файлы, специфичные для операционной системы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Файлы пользовательских настроек Azure
+launchSettings.json
